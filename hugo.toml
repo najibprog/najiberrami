@@ -1,4 +1,45 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'ananke'
+title = 'Najib ERRAMI'
+theme = ["hello-friend-ng"]
+
+# Enable sharing buttons, if you like
+enableSharingButtons = true
+
+# Show a global language switcher in the navigation bar
+enableGlobalLanguageMenu = true
+
+# Metadata mostly used in document's head
+description = "My new homepage or blog"
+keywords = "homepage, blog"
+images = ["resources/images/najib.png"]
+
+
+[[menu.main]]
+name = "Contributions"
+url = "contributions"
+weight = 2
+
+[[menu.main]]
+name = "C++"
+url = "quote"
+weight = 3
+
+[[menu.main]]
+name = "Optimization"
+url = "optimization"
+weight = 3
+
+[params.portrait]
+path = "images/najib2.png"
+
+
+[[params.social]]
+name = "github"
+url  = "https://github.com/najibprog/"
+
+[[params.social]]
+name = "linkedin"
+url  = "https://www.linkedin.com/in/najib-errami-2bb1a7197/"
+
+

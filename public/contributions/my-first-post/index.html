@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Technical Overview XLOptim was a specialized optimization add-on for Excel, developed by XLSTAT (later acquired by Lumivero) as a proof of concept that leveraged LocalSolver(Hexaly)&rsquo;s powerful local search optimization engine.
+Core Technology: C&#43;&#43; to VBA Wrapper Technical Architecture Wrapper Technology Language Bridge: Custom C&#43;&#43; to VBA wrapper Purpose: Enable seamless integration of LocalSolver&rsquo;s C&#43;&#43; optimization engine with Excel&rsquo;s VBA environment Key Components: C&#43;&#43; Dynamic Link Library (DLL) VBA Interface Module Memory Management Layer Optimization Algorithm Translations Wrapper Functionality Data Translation: Convert Excel cell ranges to C&#43;&#43; data structures Optimization Engine Calls: Translate VBA parameters to mathematical model Result Propagation: Return optimization results back to Excel spreadsheets Error Handling: Robust error management between C&#43;&#43; and VBA contexts Optimization Approach LocalSolver Integration Search Strategy: Local search metaheuristics Optimization Types: Continuous optimization Discrete optimization Mixed-integer optimization Excel Add-On Capabilities Direct optimization within Excel spreadsheets Support for complex constraint modeling Rapid solving of optimization problems Seamless integration with existing Excel workflows Development Context Creator: XLSTAT Research Team Technological Foundation: LocalSolver&rsquo;s optimization engine Acquisition: Integrated into Lumivero&rsquo;s product portfolio Technical Challenges Solved Bridging C&#43;&#43; high-performance computing with Excel&rsquo;s VBA Translating complex mathematical models across language boundaries Maintaining performance while providing user-friendly interface Robust error handling in mixed-language environment Wrapper Technical Challenges Memory Management: Preventing memory leaks Data Type Conversion: Handling numerical precision Performance Optimization: Minimizing overhead Error Propagation: Consistent error reporting Use Cases Financial modeling Resource allocation Production planning Portfolio optimization Scheduling problems Bridging Advanced Optimization and Spreadsheet Modeling
+" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://localhost:1313/contributions/my-first-post/" />
+
+
+    <title>
+        
+            XLOptim: Advanced Optimization Solver for Excel :: Najib ERRAMI 
+        
+    </title>
+
+
+
+
+
+  <link rel="stylesheet" href="/main.min.3339ceb323e24442494d9d3ba2102cad29eb11c80a486ccf70e2042d9b0f03b8.css" integrity="sha256-MznOsyPiREJJTZ07ohAsrSnrEcgKSGzPcOIELZsPA7g=" crossorigin="anonymous">
+
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="XLOptim: Advanced Optimization Solver for Excel">
+  <meta itemprop="description" content="Technical Overview XLOptim was a specialized optimization add-on for Excel, developed by XLSTAT (later acquired by Lumivero) as a proof of concept that leveraged LocalSolver(Hexaly)’s powerful local search optimization engine.
+Core Technology: C&#43;&#43; to VBA Wrapper Technical Architecture Wrapper Technology Language Bridge: Custom C&#43;&#43; to VBA wrapper Purpose: Enable seamless integration of LocalSolver’s C&#43;&#43; optimization engine with Excel’s VBA environment Key Components: C&#43;&#43; Dynamic Link Library (DLL) VBA Interface Module Memory Management Layer Optimization Algorithm Translations Wrapper Functionality Data Translation: Convert Excel cell ranges to C&#43;&#43; data structures Optimization Engine Calls: Translate VBA parameters to mathematical model Result Propagation: Return optimization results back to Excel spreadsheets Error Handling: Robust error management between C&#43;&#43; and VBA contexts Optimization Approach LocalSolver Integration Search Strategy: Local search metaheuristics Optimization Types: Continuous optimization Discrete optimization Mixed-integer optimization Excel Add-On Capabilities Direct optimization within Excel spreadsheets Support for complex constraint modeling Rapid solving of optimization problems Seamless integration with existing Excel workflows Development Context Creator: XLSTAT Research Team Technological Foundation: LocalSolver’s optimization engine Acquisition: Integrated into Lumivero’s product portfolio Technical Challenges Solved Bridging C&#43;&#43; high-performance computing with Excel’s VBA Translating complex mathematical models across language boundaries Maintaining performance while providing user-friendly interface Robust error handling in mixed-language environment Wrapper Technical Challenges Memory Management: Preventing memory leaks Data Type Conversion: Handling numerical precision Performance Optimization: Minimizing overhead Error Propagation: Consistent error reporting Use Cases Financial modeling Resource allocation Production planning Portfolio optimization Scheduling problems Bridging Advanced Optimization and Spreadsheet Modeling">
+  <meta itemprop="datePublished" content="2020-12-13T15:00:53+01:00">
+  <meta itemprop="dateModified" content="2020-12-13T15:00:53+01:00">
+  <meta itemprop="wordCount" content="244">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="XLOptim: Advanced Optimization Solver for Excel">
+  <meta name="twitter:description" content="Technical Overview XLOptim was a specialized optimization add-on for Excel, developed by XLSTAT (later acquired by Lumivero) as a proof of concept that leveraged LocalSolver(Hexaly)’s powerful local search optimization engine.
+Core Technology: C&#43;&#43; to VBA Wrapper Technical Architecture Wrapper Technology Language Bridge: Custom C&#43;&#43; to VBA wrapper Purpose: Enable seamless integration of LocalSolver’s C&#43;&#43; optimization engine with Excel’s VBA environment Key Components: C&#43;&#43; Dynamic Link Library (DLL) VBA Interface Module Memory Management Layer Optimization Algorithm Translations Wrapper Functionality Data Translation: Convert Excel cell ranges to C&#43;&#43; data structures Optimization Engine Calls: Translate VBA parameters to mathematical model Result Propagation: Return optimization results back to Excel spreadsheets Error Handling: Robust error management between C&#43;&#43; and VBA contexts Optimization Approach LocalSolver Integration Search Strategy: Local search metaheuristics Optimization Types: Continuous optimization Discrete optimization Mixed-integer optimization Excel Add-On Capabilities Direct optimization within Excel spreadsheets Support for complex constraint modeling Rapid solving of optimization problems Seamless integration with existing Excel workflows Development Context Creator: XLSTAT Research Team Technological Foundation: LocalSolver’s optimization engine Acquisition: Integrated into Lumivero’s product portfolio Technical Challenges Solved Bridging C&#43;&#43; high-performance computing with Excel’s VBA Translating complex mathematical models across language boundaries Maintaining performance while providing user-friendly interface Robust error handling in mixed-language environment Wrapper Technical Challenges Memory Management: Preventing memory leaks Data Type Conversion: Handling numerical precision Performance Optimization: Minimizing overhead Error Propagation: Consistent error reporting Use Cases Financial modeling Resource allocation Production planning Portfolio optimization Scheduling problems Bridging Advanced Optimization and Spreadsheet Modeling">
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-12-13 15:00:53 &#43;0100 CET" />
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                hello</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/contributions">Contributions</a></li><li><a href="/quote">C&#43;&#43;</a></li><li><a href="/optimization">Optimization</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://localhost:1313/contributions/my-first-post/">XLOptim: Advanced Optimization Solver for Excel</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <h2 id="technical-overview">Technical Overview</h2>
+<p>XLOptim was a specialized optimization add-on for Excel, developed by XLSTAT (later acquired by Lumivero) as a proof of concept that leveraged LocalSolver(Hexaly)&rsquo;s powerful local search optimization engine.</p>
+<h2 id="core-technology-c-to-vba-wrapper">Core Technology: C++ to VBA Wrapper</h2>
+<h3 id="technical-architecture">Technical Architecture</h3>
+<h4 id="wrapper-technology">Wrapper Technology</h4>
+<ul>
+<li><strong>Language Bridge</strong>: Custom C++ to VBA wrapper</li>
+<li><strong>Purpose</strong>: Enable seamless integration of LocalSolver&rsquo;s C++ optimization engine with Excel&rsquo;s VBA environment</li>
+<li><strong>Key Components</strong>:
+<ul>
+<li>C++ Dynamic Link Library (DLL)</li>
+<li>VBA Interface Module</li>
+<li>Memory Management Layer</li>
+<li>Optimization Algorithm Translations</li>
+</ul>
+</li>
+</ul>
+<h4 id="wrapper-functionality">Wrapper Functionality</h4>
+<ul>
+<li><strong>Data Translation</strong>: Convert Excel cell ranges to C++ data structures</li>
+<li><strong>Optimization Engine Calls</strong>: Translate VBA parameters to mathematical model</li>
+<li><strong>Result Propagation</strong>: Return optimization results back to Excel spreadsheets</li>
+<li><strong>Error Handling</strong>: Robust error management between C++ and VBA contexts</li>
+</ul>
+<h2 id="optimization-approach">Optimization Approach</h2>
+<h3 id="localsolver-integration">LocalSolver Integration</h3>
+<ul>
+<li><strong>Search Strategy</strong>: Local search metaheuristics</li>
+<li><strong>Optimization Types</strong>:
+<ul>
+<li>Continuous optimization</li>
+<li>Discrete optimization</li>
+<li>Mixed-integer optimization</li>
+</ul>
+</li>
+</ul>
+<h3 id="excel-add-on-capabilities">Excel Add-On Capabilities</h3>
+<ul>
+<li>Direct optimization within Excel spreadsheets</li>
+<li>Support for complex constraint modeling</li>
+<li>Rapid solving of optimization problems</li>
+<li>Seamless integration with existing Excel workflows</li>
+</ul>
+<h2 id="development-context">Development Context</h2>
+<ul>
+<li><strong>Creator</strong>: XLSTAT Research Team</li>
+<li><strong>Technological Foundation</strong>: LocalSolver&rsquo;s optimization engine</li>
+<li><strong>Acquisition</strong>: Integrated into Lumivero&rsquo;s product portfolio</li>
+</ul>
+<h2 id="technical-challenges-solved">Technical Challenges Solved</h2>
+<ol>
+<li>Bridging C++ high-performance computing with Excel&rsquo;s VBA</li>
+<li>Translating complex mathematical models across language boundaries</li>
+<li>Maintaining performance while providing user-friendly interface</li>
+<li>Robust error handling in mixed-language environment</li>
+</ol>
+<h2 id="wrapper-technical-challenges">Wrapper Technical Challenges</h2>
+<ul>
+<li><strong>Memory Management</strong>: Preventing memory leaks</li>
+<li><strong>Data Type Conversion</strong>: Handling numerical precision</li>
+<li><strong>Performance Optimization</strong>: Minimizing overhead</li>
+<li><strong>Error Propagation</strong>: Consistent error reporting</li>
+</ul>
+<h2 id="use-cases">Use Cases</h2>
+<ul>
+<li>Financial modeling</li>
+<li>Resource allocation</li>
+<li>Production planning</li>
+<li>Portfolio optimization</li>
+<li>Scheduling problems</li>
+</ul>
+<p><em>Bridging Advanced Optimization and Spreadsheet Modeling</em></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>
