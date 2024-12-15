@@ -3,6 +3,13 @@ languageCode = 'en-us'
 title = 'Najib ERRAMI'
 theme = ["hello-friend-ng"]
 
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
 # Enable sharing buttons, if you like
 enableSharingButtons = true
 
