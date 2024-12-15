@@ -19,22 +19,21 @@ enableGlobalLanguageMenu = true
 # Metadata mostly used in document's head
 description = "ERRAMI Najib"
 keywords = "homepage, blog"
-images = ["resources/images/najib.png"]
 
 
 [[menu.main]]
 name = "Contributions"
-url = "Contributions"
+url = "contributions"
 weight = 2
 
 [[menu.main]]
 name = "C++"
-url = "C++"
+url = "code"
 weight = 3
 
 [[menu.main]]
 name = "Optimization"
-url = "Optimization"
+url = "optimization"
 weight = 3
 
 [params.portrait]
