@@ -17,24 +17,24 @@ enableSharingButtons = true
 enableGlobalLanguageMenu = true
 
 # Metadata mostly used in document's head
-description = "My new homepage or blog"
+description = "ERRAMI Najib"
 keywords = "homepage, blog"
 images = ["resources/images/najib.png"]
 
 
 [[menu.main]]
 name = "Contributions"
-url = "contributions"
+url = "Contributions"
 weight = 2
 
 [[menu.main]]
 name = "C++"
-url = "quote"
+url = "C++"
 weight = 3
 
 [[menu.main]]
 name = "Optimization"
-url = "optimization"
+url = "Optimization"
 weight = 3
 
 [params.portrait]

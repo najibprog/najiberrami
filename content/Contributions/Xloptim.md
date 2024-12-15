@@ -1,6 +1,6 @@
 +++
 date = '2020-12-01T15:00:53+01:00'
-draft = true
+draft = false
 title = 'XLOptim: Advanced Optimization Solver for Excel'
 +++
 
