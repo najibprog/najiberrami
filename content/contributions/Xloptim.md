@@ -72,5 +72,3 @@ XLOptim was a specialized optimization add-on for Excel, developed by XLSTAT (la
 - Portfolio optimization
 - Scheduling problems
 
-
-*Bridging Advanced Optimization and Spreadsheet Modeling*
